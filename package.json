@@ -1,0 +1,23 @@
+{
+  "name": "schema-webhooks-example",
+  "version": "1.0.0",
+  "description": "Schema commerce webhooks example",
+  "website": "https://schema.io",
+  "main": "server.js",
+  "author": "Schema Technologies",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "1.16.0",
+    "express": "4.14.1",
+    "express-promise": "0.4.0",
+    "schema-client": "2.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "1.11.0"
+  },
+  "scripts": {
+    "watch": "nodemon --harmony server.js",
+    "start": "node --harmony --optimize_for_size --max_old_space_size=460 --gc_interval=100 server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
