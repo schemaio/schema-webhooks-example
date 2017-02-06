@@ -14,10 +14,6 @@ const WEBHOOK_URL = process.env.WEBHOOK_URL || 'your endpoint url';
 
 Set to the public URL that your webhook can be accessed from. If you're testing on `localhost` then we recommend using https://ngrok.com/. Ngrok will provide a URL such as `http://bfae1d11.ngrok.io` to access your webhook script.
 
-```bash
-./ngrok http 8080
-```
-
 ```javascript
 const SCHEMA_CLIENT_ID = process.env.SCHEMA_CLIENT_ID || 'your client id';
 ```
