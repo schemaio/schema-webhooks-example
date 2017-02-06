@@ -6,9 +6,11 @@ This example should provide a quick reference or starting point for your own web
 
 ## Run the example
 
-A few variables should be replaced, either inline or with environment variables.
+Before starting, few variables should be replaced inline or with environment variables.
 
-### WEBHOOK_URL
+```javascript
+const WEBHOOK_URL = process.env.WEBHOOK_URL || 'your endpoint url';
+```
 
 Set to the public URL that your webhook can be accessed from. If you're testing on `localhost` then we recommend using https://ngrok.com/. Ngrok will provide a URL such as `http://bfae1d11.ngrok.io` to access your webhook script.
 
@@ -16,11 +18,15 @@ Set to the public URL that your webhook can be accessed from. If you're testing 
 ./ngrok http 8080
 ```
 
-### SCHEMA_CLIENT_ID
+```javascript
+const SCHEMA_CLIENT_ID = process.env.SCHEMA_CLIENT_ID || 'your client id';
+```
 
 Set to your Schema client ID.
 
-### SCHEMA_CLIENT_KEY
+```javascript
+const SCHEMA_CLIENT_KEY = process.env.SCHEMA_CLIENT_KEY || 'your client key';
+```
 
 Set to your Schema client key found in System / Account / Keys.
 
